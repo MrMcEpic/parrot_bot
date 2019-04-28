@@ -1,0 +1,19 @@
+{
+  "name": "parrot_bot",
+  "version": "1.0.0",
+  "description": "discord bot",
+  "main": "bot.js",
+  "author": "Mr Mc Epic",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "nodemon bot.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "dotenv": "^7.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}
