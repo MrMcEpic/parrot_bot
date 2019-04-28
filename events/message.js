@@ -72,6 +72,9 @@ module.exports = (client, message) => {
     if (words.search("duck") >= 0) {
       list.push('Ducks')
     }
+    if (words.search("ringneck") >= 0 || words.search("ring neck") >= 0 || words.search("ring-neck") >= 0) {
+      list.push('Ringneck')
+    }
     if (list.length > 0) {
       return addrole(message, list)
     } else {
