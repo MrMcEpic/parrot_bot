@@ -15,7 +15,7 @@ module.exports = (client, message) => {
 
     //anti-spam
     if (words.includes("nude") && words.includes("pic")) {
-      return deleteandshare(message)
+      return deleteandshare(client, message)
     }
 
     //list of alt spellings
