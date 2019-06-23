@@ -14,7 +14,7 @@ module.exports = (client, message) => {
     }
 
     //anti-spam
-    if (words.includes("nude") && words.includes("pic")) {
+    if (words.includes("nude")) {
       return deleteandshare(client, message)
     }
 
@@ -51,8 +51,8 @@ module.exports = (client, message) => {
     }
 
     //list end
-    message.react("❤")
     if (listToAdd.length > 0) {
+      message.react("❤")
       return addrole(message, listToAdd)
     }
     /*
