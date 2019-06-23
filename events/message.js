@@ -1,4 +1,5 @@
 const addrole = require('../commands/addrole')
+const deleteandshare = require('../commands/deleteandshare')
 module.exports = (client, message) => {
   if (message.channel.name === 'introduction') {
 
@@ -12,8 +13,12 @@ module.exports = (client, message) => {
       }
     }
 
-    //list of alt spellings
+    //anti-spam
+    if (words.includes("nude") && words.includes("pic")) {
+      return deleteandshare(message)
+    }
 
+    //list of alt spellings
     if (words.includes("budgie") || words.includes("parakeet")) {
       listToAdd.push('Budgie')
     }
