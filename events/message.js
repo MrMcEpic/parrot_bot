@@ -4,7 +4,7 @@ module.exports = (client, message) => {
   if (message.channel.name === 'introduction') {
 
     //for roles that have one easy spelling
-    const simpleRoles = ["Macaw", "Cockatoo", "Eclectus", "Amazon", "Alexandrine", "Caique", "Senegal", "Cockatiel", "Quaker", "Rosella", "Kakariki", "Parrolet", "Canary", "Finch"];
+    const simpleRoles = ["Macaw", "Cockatoo", "Eclectus", "Amazon", "Alexandrine", "Caique", "Senegal", "Cockatiel", "Quaker", "Rosella", "Kakariki", "Parrotlet", "Canary", "Finch"];
     let listToAdd = []
     let words = message.content.toLowerCase();
     for (const role of simpleRoles) {
