@@ -52,6 +52,7 @@ module.exports = (client, message) => {
 
     //list end
     if (listToAdd.length > 0) {
+      message.react("❤")
       return addrole(message, listToAdd)
     } else {
       message.react("❤")
