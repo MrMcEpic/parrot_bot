@@ -52,13 +52,10 @@ module.exports = (client, message) => {
 
     //list end
     if (listToAdd.length > 0) {
-      message.react("❤")
       return addrole(message, listToAdd)
+    } else {
+      message.react("❤")
+      return addrole(message, ['Interested in birbs'])
     }
-    /*
-    else {
-         return addrole(message, ['Interested in birbs'])
-       }
-    */
   }
 }
